@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  color: #e6e6e6;
+  text-align: center;
+  font-family: sans-serif;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: #121212;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+h2 {
+  font-size: 95%;
+  margin-bottom: auto;
+}
+/*# sourceMappingURL=template.css.map */
