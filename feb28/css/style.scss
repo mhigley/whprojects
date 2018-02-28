@@ -1,0 +1,25 @@
+body {
+    // background-color: salmon;
+}
+
+section {
+    height: 800px;
+    background-color: purple;
+    padding: 10px;
+    margin: 50px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    // justify-content: stretch;
+    align-items: stretch;
+}
+div {
+    flex: 1;
+    // width: 200px;
+    // height: 65px;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    background-color: pink;
+    margin: 5px;
+}

@@ -1,0 +1,19 @@
+section {
+  height: 800px;
+  background-color: purple;
+  padding: 10px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+}
+
+div {
+  flex: 1;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  background-color: pink;
+  margin: 5px;
+}
+/*# sourceMappingURL=style.css.map */
