@@ -1,0 +1,40 @@
+html {
+  background-color: pink;
+}
+
+#apple {
+  color: red;
+}
+
+#orange {
+  color: orange;
+}
+
+p {
+  color: slateblue;
+}
+
+p .banana {
+  color: yellow;
+}
+
+div {
+  color: palevioletred;
+}
+
+div span {
+  color: orange;
+}
+
+span {
+  color: purple;
+}
+
+section#portfolio ul li.port {
+  color: black;
+}
+
+#portfolio li {
+  color: green;
+}
+/*# sourceMappingURL=style.css.map */

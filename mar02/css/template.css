@@ -1,0 +1,98 @@
+body {
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+header {
+  padding: 10vw 2vw;
+  background-color: darkturquoise;
+  text-align: center;
+  color: whitesmoke;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: lime;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: purple;
+}
+
+a {
+  color: inherit;
+}
+
+a.btn {
+  background-color: rgba(20, 20, 20, 0.25);
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: background-color 200ms;
+}
+
+a.btn:hover {
+  background-color: rgba(20, 20, 20, 0.1);
+  font-size: 32px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+h2 {
+  font-weight: 100;
+  margin: 45px;
+}
+
+#features h2 {
+  border-bottom: 3px double #141414;
+  display: inline-block;
+}
+
+header div {
+  width: 35%;
+  padding: 5vw;
+  border-width: 3px 1px;
+  border-style: double solid;
+  border-color: whitesmoke;
+  margin: 0 auto;
+}
+
+#features {
+  text-align: center;
+}
+
+#features ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#features ul li {
+  width: 25%;
+  padding: 40px;
+  border: 1px solid #141414;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+#features ul i {
+  font-size: 300%;
+  color: darkturquoise;
+}
+/*# sourceMappingURL=template.css.map */
