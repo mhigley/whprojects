@@ -1,0 +1,99 @@
+$white: hsl(0, 0%, 96%);
+$black: hsl(204, 6%, 17%);
+$ignite: hsl(191, 58%, 42%);
+$classic: hsl(11, 58%, 42%);
+
+
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    color: $white;
+}
+h1 {
+    margin: 0;
+}
+
+
+
+
+header {
+    display: flex;
+    overflow: hidden;
+    background-color: $black;
+    position: relative;
+    height: 200px;
+}
+.skew {
+    width: 50vw;
+    transform: skew(-45deg);
+    transform-origin: left bottom;
+}
+.ignite {
+    background-color: $ignite;
+    
+}
+.classic {
+    background-color: $classic;
+    background-image: url('../img/classic-ribbon.svg');
+    background-size: 100px;
+    background-repeat: repeat-y;
+}
+.text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.logo {
+    flex: none;
+    width: 200px;
+    height: 100%;
+    img {
+        width: 50%;
+    }
+}
+.marquee {
+    margin-left: -75px;
+    display: flex;
+    align-items: center;
+    h1 {
+        text-shadow: 0 0 30px transparentize(black, .5);
+    }
+}
+
+
+@media print {
+    header {
+        height: 500px;
+        font-size: 300%;
+    }
+    .skew {
+        display: none;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .ignite {
+        background-color: red;
+    }
+    .classic {
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 450px){
+    h1 {
+        font-size: 150%;
+        color: green;
+    }
+}
+
+@media screen and (min-width: 672px) and (max-width: 700px){
+    h1 {
+        font-size: 75%;
+        color: yellow;
+    }
+}
