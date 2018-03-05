@@ -1,0 +1,451 @@
+@font-face {
+  font-family: 'Klinic Slab Bold';
+  src: url("../fonts/KlinicSlabBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/KlinicSlabBold.eot?#iefix") format("embedded-opentype"), url("../fonts/KlinicSlabBold.woff") format("woff"), url("../fonts/KlinicSlabBold.ttf") format("truetype"), url("../fonts/KlinicSlabBold.svg#8e90ab6d31b9d4bc42471dae9b791b37") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Bold';
+  src: url("../fonts/KlinicSlabBoldIt.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/KlinicSlabBoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/KlinicSlabBoldIt.woff") format("woff"), url("../fonts/KlinicSlabBoldIt.ttf") format("truetype"), url("../fonts/KlinicSlabBoldIt.svg#618c33abdbbe8e13f43a4162914a25fc") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Book';
+  src: url("../fonts/KlinicSlabBook.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/KlinicSlabBook.eot?#iefix") format("embedded-opentype"), url("../fonts/KlinicSlabBook.woff") format("woff"), url("../fonts/KlinicSlabBook.ttf") format("truetype"), url("../fonts/KlinicSlabBook.svg#ef4b9a9c8bad3bc3791ab8a2756f476c") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Book';
+  src: url("../fonts/KlinicSlabBookIt.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/KlinicSlabBookIt.eot?#iefix") format("embedded-opentype"), url("../fonts/KlinicSlabBookIt.woff") format("woff"), url("../fonts/KlinicSlabBookIt.ttf") format("truetype"), url("../fonts/KlinicSlabBookIt.svg#c57518cf9b1bb131652880f11e079f6e") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Light';
+  src: url("../fonts/KlinicSlabLight.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/KlinicSlabLight.eot?#iefix") format("embedded-opentype"), url("../fonts/KlinicSlabLight.woff") format("woff"), url("../fonts/KlinicSlabLight.ttf") format("truetype"), url("../fonts/KlinicSlabLight.svg#a6c7620236ba1cde743526303763973f") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Light';
+  src: url("../fonts/KlinicSlabLightIt.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/KlinicSlabLightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/KlinicSlabLightIt.woff") format("woff"), url("../fonts/KlinicSlabLightIt.ttf") format("truetype"), url("../fonts/KlinicSlabLightIt.svg#e5fa01bfa1e18638c015f7e63bfdf919") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Medium';
+  src: url("../fonts/KlinicSlabMedium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/KlinicSlabMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/KlinicSlabMedium.woff") format("woff"), url("../fonts/KlinicSlabMedium.ttf") format("truetype"), url("../fonts/KlinicSlabMedium.svg#fd52dd882945bfc9b5d2bad8879c52ec") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Medium';
+  src: url("../fonts/KlinicSlabMediumIt.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/KlinicSlabMediumIt.eot?#iefix") format("embedded-opentype"), url("../fonts/KlinicSlabMediumIt.woff") format("woff"), url("../fonts/KlinicSlabMediumIt.ttf") format("truetype"), url("../fonts/KlinicSlabMediumIt.svg#07fe34313cb27300b091276b57c79ad4") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Bitwise";
+  src: url("../fonts/bitwise.eot?") format("eot"), url("../fonts/bitwise.woff") format("woff"), url("../fonts/bitwise.ttf") format("truetype"), url("../fonts/bitwise.svg#bitwise") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  background-color: #292c2e;
+  font-size: calc( 20px + (28 - 20) * (100vw - 400px) / (800 - 400));
+  font-family: 'Klinic Slab Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.25;
+  letter-spacing: .05vw;
+  color: #ebebeb;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  line-height: 1em;
+  font-family: 'Klinic Slab Bold';
+}
+
+h1 {
+  margin: 0;
+  text-shadow: 0 0 3vw rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 0;
+}
+
+.pad {
+  padding: 20vh 5vh;
+}
+
+.pad-sm {
+  padding: 5vh;
+}
+
+.btn {
+  border: calc(.2vw + 1px) solid white;
+  border-radius: .15em;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: calc(1.5vw + 5px);
+  transition: transform 250ms ease-out;
+}
+
+.btn:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+@supports (backdrop-filter: blur()) {
+  .btn {
+    backdrop-filter: blur(1vw);
+  }
+}
+
+header {
+  background-color: #292c2e;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  color: white;
+}
+
+.skew {
+  width: 50vw;
+  height: 100%;
+  transform: skew(-45deg);
+  transform-origin: bottom left;
+}
+
+.ignite {
+  background-color: #2d92a9;
+}
+
+.classic {
+  background-color: #a9442d;
+  background-image: url("../img/classic-ribbon.svg");
+  background-size: 9.9vw;
+  background-repeat: repeat-y;
+  background-position: left top;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.logo, .countdown {
+  width: 50vh;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.marquee {
+  flex: 1;
+  height: 100%;
+  position: absolute;
+  left: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.marquee h1 {
+  margin-bottom: 5vw;
+}
+
+.countdown {
+  font-size: 75%;
+  text-align: right;
+  right: 0;
+  bottom: 0;
+}
+
+.countdown p {
+  margin: 0;
+}
+
+@media screen and (orientation: portrait) {
+  .pad {
+    padding: 20vw 5vw;
+  }
+  .pad-sm {
+    padding: 5vw;
+  }
+  header {
+    height: calc(75vw + 75px);
+  }
+  header .skew {
+    width: 100vw;
+  }
+  header .classic, header .countdown {
+    display: none;
+  }
+  header .logo {
+    width: calc(25vw + 25px);
+  }
+  header .marquee {
+    left: calc(25vw + 25px);
+  }
+}
+
+#tracks {
+  display: flex;
+  position: relative;
+}
+
+#tracks img {
+  width: 90%;
+  margin-top: -25vw;
+}
+
+#tracks .ignite {
+  background-image: url("../img/ignite-fire.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+#tracks .ignite h1 {
+  text-transform: lowercase;
+}
+
+#tracks .classic {
+  background-image: none;
+}
+
+#tracks .classic h1 {
+  font-family: 'Bitwise';
+}
+
+#tracks .ignite, #tracks .classic {
+  overflow: hidden;
+  flex: 1;
+  padding-bottom: 10vw;
+  position: relative;
+}
+
+#tracks .ignite h1, #tracks .classic h1 {
+  margin: 0 0 5vw;
+}
+
+#tracks .ignite p, #tracks .classic p {
+  margin-bottom: 5vw;
+}
+
+#tracks .ignite div, #tracks .classic div {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media screen and (orientation: portrait) {
+  #tracks {
+    flex-direction: column;
+  }
+  #tracks .ignite, #tracks .classic {
+    padding-bottom: 30vw;
+  }
+  #tracks .ignite h1, #tracks .classic h1 {
+    margin: 5vw 0;
+  }
+  #tracks .ignite p, #tracks .classic p {
+    margin-bottom: 10vw;
+  }
+}
+
+#tracks-point {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+
+#tracks-point div {
+  flex: 1;
+  height: 10vw;
+}
+
+#tracks-point .ignite-point {
+  background-image: linear-gradient(to bottom left, #2d92a9 50%, transparent 50%);
+}
+
+#tracks-point .classic-point {
+  background-image: linear-gradient(to bottom right, #a9442d 50%, transparent 50%);
+}
+
+@media screen and (orientation: portrait) {
+  #tracks-point {
+    display: none;
+  }
+}
+
+.ignite-angle, .classic-angle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 5vw;
+  display: none;
+}
+
+.ignite-angle {
+  background-image: linear-gradient(to bottom left, #2d92a9 50%, transparent 50%);
+}
+
+.classic-angle {
+  background-image: linear-gradient(to bottom left, #a9442d 50%, transparent 50%);
+}
+
+@media screen and (orientation: portrait) {
+  .ignite-angle, .classic-angle {
+    display: block;
+  }
+}
+
+#dates {
+  position: relative;
+  padding: 15vw 5vw 10vw;
+  background-image: url("../img/fresno-skyline.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#dates h1 {
+  width: 100%;
+  text-align: center;
+}
+
+#dates ul {
+  padding-left: 1rem;
+}
+
+#dates .thecompetition, #dates .freakingbrilliant {
+  flex: 1;
+}
+
+@media screen and (orientation: portrait) {
+  #dates {
+    padding: 30vw 5vw;
+  }
+}
+
+#prizes {
+  background-color: #3c4380;
+  padding: 5vw;
+  position: relative;
+}
+
+#prizes .prizes-angle {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5vw;
+}
+
+#prizes .prizes-angle:first-child {
+  top: 100%;
+  background-image: linear-gradient(to bottom left, #3c4380 50%, transparent 50%);
+}
+
+#prizes .prizes-angle:last-child {
+  bottom: 100%;
+  background-image: linear-gradient(to top right, #3c4380 50%, transparent 50%);
+}
+
+#prizes li {
+  display: flex;
+  align-items: center;
+  margin-top: -2vw;
+}
+
+#prizes li:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+#prizes li:nth-child(even) img {
+  margin: 0 0 0 2vw;
+}
+
+#prizes img {
+  flex: none;
+  width: calc(15vw + 50px);
+  height: calc(15vw + 50px);
+  border-radius: 100%;
+  margin: 0 2vw 0 0;
+  border: calc(.25vw + 3px) solid #ebebeb;
+}
+
+#smart {
+  position: relative;
+  padding: 10vw 5vw;
+}
+/*# sourceMappingURL=styles.css.map */

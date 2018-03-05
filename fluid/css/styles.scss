@@ -1,0 +1,330 @@
+@import 'fonts';
+
+$black: hsla(204, 6%, 17%, 1);
+$white: hsla(0, 0%, 92%, 1);
+
+$doc-orange: hsla(24, 89%, 54%, 1);
+$ignite: hsla(191, 58%, 42%, 1);
+$classic: hsla(11, 58%, 42%, 1);
+
+$ribbon-blue: hsla(234, 36%, 37%, 1);
+$ribbon-purple: hsla(308, 42%, 39%, 1);
+$ribbon-red: hsla(357, 95%, 60%, 1);
+$ribbon-orange: hsla(31, 92%, 56%, 1);
+$ribbon-yellow: hsla(48, 82%, 60%, 1);
+
+// global defaults
+html {
+    background-color: $black;
+    font-size: calc( 20px + (28 - 20) * (100vw - 400px) / (800 - 400) );
+    font-family: 'Klinic Slab Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.25;
+    letter-spacing: .05vw;
+    color: $white;
+}
+body {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, strong {
+    line-height: 1em;
+    font-family: 'Klinic Slab Bold';
+}
+h1 {
+    margin: 0;
+    text-shadow: 0 0 3vw hsla(0, 0%, 0%, .5);
+    font-size: 2rem;
+    font-weight: 100;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+p {
+    margin-top: 0;
+}
+.pad {
+    padding: 20vh 5vh;
+    &-sm {
+        padding: 5vh;
+    }
+}
+.btn {
+    border: calc(.2vw + 1px) solid white;
+    border-radius: .15em;
+    background-color: hsla(0, 0%, 100%, .15);
+    padding: calc(1.5vw + 5px);
+    transition: transform 250ms ease-out;
+    &:hover {
+        transform: scale(1.1) rotate(-2deg);
+    }
+}
+
+// advanced browser support
+@supports (backdrop-filter: blur()){
+    .btn {
+        backdrop-filter: blur(1vw);
+    }
+}
+
+
+
+header {
+    background-color: $black;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    color: white;
+}
+.skew {
+    width: 50vw;
+    height: 100%;
+    transform: skew(-45deg);
+    transform-origin: bottom left;
+}
+.ignite {
+    background-color: $ignite;
+}
+.classic {
+    background-color: $classic;
+    background-image: url('../img/classic-ribbon.svg');
+    background-size: 9.9vw;
+    background-repeat: repeat-y;
+    background-position: left top;
+}
+.text {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+}
+.logo, .countdown {
+    width: 50vh;
+    box-sizing: border-box;
+    position: absolute;
+}
+.marquee {
+    flex: 1;
+    height: 100%;
+    position: absolute;
+    left: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h1 {
+        margin-bottom: 5vw;
+    }
+}
+.countdown {
+    font-size: 75%;
+    text-align: right;
+    right: 0;
+    bottom: 0;
+    p {
+        margin: 0;
+    }
+}
+
+
+// media queries
+@media screen and (orientation: portrait){
+    .pad {
+        padding: 20vw 5vw;
+        &-sm {
+            padding: 5vw;
+        }
+    }
+    header {
+        height: calc(75vw + 75px);
+        .skew {width: 100vw;}
+        .classic, .countdown {display: none;}
+        .logo {
+            width: calc(25vw + 25px);
+        }
+        .marquee {
+            left: calc(25vw + 25px);
+        }
+    }
+}
+
+
+
+
+
+
+#tracks {
+    display: flex;
+    position: relative;
+    img {
+        width: 90%;
+        margin-top: -25vw;
+    }
+    .ignite {
+        background-image: url('../img/ignite-fire.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+    .ignite h1 {
+        text-transform: lowercase;
+    }
+    .classic {
+        background-image: none;
+    }
+    .classic h1 {
+        // text-transform: uppercase;
+        font-family: 'Bitwise';
+    }
+    .ignite, .classic {
+        overflow: hidden;
+        flex: 1;
+        padding-bottom: 10vw;
+        h1 {margin: 0 0 5vw;}
+        p {margin-bottom: 5vw;}
+        position: relative;
+        div {
+            text-align: center;
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (orientation: portrait){
+    #tracks {
+        flex-direction: column;
+        .ignite, .classic {
+            padding-bottom: 30vw;
+            h1 {margin: 5vw 0;}
+            p {margin-bottom: 10vw;}
+        }
+    }
+}
+
+
+
+#tracks-point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    div {
+        flex: 1;
+        height: 10vw;
+    }
+    .ignite-point {
+        background-image: linear-gradient(to bottom left, $ignite 50%, transparent 50%);
+    }
+    .classic-point {
+        background-image: linear-gradient(to bottom right, $classic 50%, transparent 50%);
+    }
+}
+
+@media screen and (orientation: portrait){
+    #tracks-point {display: none;}
+}
+
+.ignite-angle, .classic-angle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 5vw;
+    display: none;
+}
+.ignite-angle {
+    background-image: linear-gradient(to bottom left, $ignite 50%, transparent 50%);
+}
+.classic-angle {
+    background-image: linear-gradient(to bottom left, $classic 50%, transparent 50%);
+}
+
+@media screen and (orientation: portrait){
+    .ignite-angle, .classic-angle {display: block;}
+}
+
+#dates {
+    position: relative;
+    padding: 15vw 5vw 10vw;
+    background-image: url('../img/fresno-skyline.svg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap; 
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+    ul {
+        padding-left: 1rem;
+    }
+    .thecompetition, .freakingbrilliant {
+        flex: 1;
+    }
+}
+
+@media screen and (orientation: portrait){
+    #dates {
+        padding: 30vw 5vw;
+    }
+}
+
+#prizes {
+    background-color: $ribbon-blue;
+    padding: 5vw;
+    position: relative;
+    .prizes-angle {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 5vw;
+    }
+    .prizes-angle:first-child {
+        top: 100%;
+        background-image: linear-gradient(to bottom left, $ribbon-blue 50%, transparent 50%);
+    }
+    .prizes-angle:last-child {
+        bottom: 100%;
+        background-image: linear-gradient(to top right, $ribbon-blue 50%, transparent 50%);
+    }
+    li {
+        display: flex;
+        align-items: center;
+        margin-top: -2vw;
+    }
+    li:nth-child(even){
+        flex-direction: row-reverse;
+        text-align: right;
+        img {
+            margin: 0 0 0 2vw;
+        }
+    }
+    img {
+        flex: none;
+        width: calc(15vw + 50px);
+        height: calc(15vw + 50px);
+        border-radius: 100%;
+        margin: 0 2vw 0 0;
+        border: calc(.25vw + 3px) solid $white;
+    }
+}
+
+#smart {
+    position: relative;
+    padding: 10vw 5vw;
+    
+}
