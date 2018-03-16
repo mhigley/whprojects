@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Teko:300,400,500,600,700');
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 
+$hilight: hsl(338, 95%, 56%);
+
 html, body {
     height: 100%;
     margin: 0;
@@ -28,7 +30,7 @@ a {
     text-decoration: none;
     transition: color 200ms;
     &:hover {
-        color: #f92672;
+        color: $hilight;
         cursor: pointer;
     }
 }
@@ -36,7 +38,7 @@ span {
     font-family: 'Iconsolata', monospace;
     background-color: #272822;
     border-radius: .5vw;
-    color: #f92672;
+    color: $hilight;
     padding: .5vw 1vw;
     b {
         color: white;

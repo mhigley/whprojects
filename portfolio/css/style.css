@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-  color: #f92672;
+  color: #f92472;
   cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ span {
   font-family: 'Iconsolata', monospace;
   background-color: #272822;
   border-radius: .5vw;
-  color: #f92672;
+  color: #f92472;
   padding: .5vw 1vw;
 }
 
