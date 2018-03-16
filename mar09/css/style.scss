@@ -173,6 +173,10 @@ i {
     }
 }
 
+@media print {
+    nav {display: none;}
+}
+
 // @keyframes copy {
 //     from {
 //         bottom: -50px;

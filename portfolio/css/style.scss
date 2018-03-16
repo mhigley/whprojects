@@ -1,29 +1,57 @@
-.btn {
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Teko:300,400,500,600,700');
+@import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 
-// position: absolute;
-// width: 251px;
-// height: 69px;
-// left: 612px;
-// top: 721px;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 2vw 10vw;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('../img/matthew-higley.png'), linear-gradient(to top, hsla(0, 0%, 90%, 1) 25%, hsla(0, 0%, 98%, 0));
+    background-repeat: no-repeat, repeat;
+    background-size: 50%;
+    background-position: left bottom;
+    font-family: 'Teko', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 600;
+}
+@media screen and (min-width: 25em){
+    html { font-size: calc( 40px + (60 - 40) * (100vw - 400px) / (1200 - 400) ); }
+}
+@media screen and (min-width: 75em){
+    html {font-size: 60px;}
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 200ms;
+    &:hover {
+        color: #f92672;
+        cursor: pointer;
+    }
+}
+span {
+    font-family: 'Iconsolata', monospace;
+    background-color: #272822;
+    border-radius: .5vw;
+    color: #f92672;
+    padding: .5vw 1vw;
+    b {
+        color: white;
+    }
+}
 
-background: linear-gradient(64.16deg, #4F4F4F 21.8%, #EB5757 83.65%);
-border-radius: 5px;
-
-
-/* Click here. */
-
-// position: absolute;
-// width: 183px;
-// height: 30px;
-// left: 644px;
-// top: 742px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 32px;
-text-align: center;
-
-color: #F2F2F2;
+p {
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1.1;
+}
+#contact {
+    padding-top: 4vw;
+    p {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
 }
