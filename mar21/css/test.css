@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+section {
+    width: calc(100vw / 3);
+    height: calc(100vh / 2);
+    /* min-width: 100%;
+    min-height: 100%; */
+    transition: all 500ms;
+    background-color: lightgray;
+}
+section.hover {
+    width: calc( (100vw / 3) + 25vw);
+    height: calc( (100vh / 2) + 25vh );
+    /* width: calc(100vw / 2);
+    height: calc(100vh / 1.75); */
+    background-color: darkgray;
+}
+section:not(.hover){
+    width: calc( (100vw / 3) - ( 25vw / 2) );
+    height: calc( (100vh / 2) - 25vh );
+    background-color: red;
+}

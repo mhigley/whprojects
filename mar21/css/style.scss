@@ -1,0 +1,36 @@
+$black: hsla(0, 0%, 19%, 1);
+
+body {
+    margin: 0;
+}
+button {
+    border: 1px solid darken($black, 10);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: inherit;
+    &:hover {
+        background-color: lighten($black, 65);
+        cursor: pointer;
+    }
+}
+
+h1 {
+    // background-image: url('../img/fireworks.gif');
+    background-size: cover;
+    padding: 25px;
+    // color: white;
+}
+
+body {
+    background-color: white;
+    transition: background-color 500ms;
+}
+body.colorize {
+    background-color: red;
+}
+nav {
+    padding: 10px;
+    background-color: $black;
+    display: flex;
+    justify-content: flex-end;
+}

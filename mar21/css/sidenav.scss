@@ -1,0 +1,77 @@
+@import url(https://use.fontawesome.com/releases/v5.0.8/css/all.css);
+
+$black: hsla(0, 0%, 19%, 1);
+$nav: hsl(114, 35%, 45%);
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+img {
+    width: 100%;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+button {
+    padding: 5px 10px;
+    border: 1px solid darken($black, 10);
+    border-radius: 4px;
+    &:hover {
+        background-color: lighten($black, 65);
+        cursor: pointer;
+    }
+}
+#navBtn {
+    position: relative;
+    z-index: 10000;
+    transition: right 250ms;
+    right: 0;
+    &.active {
+        right: 230px;
+        transform: translateX(100%);
+    }
+}
+nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    z-index: 9999;
+    background-color: $nav;
+    width: 250px;
+    height: 100vh;
+    transition: right 250ms;
+    &.viewNav {
+        right: 0;
+    }
+    ul {
+        padding: 65px 20px 20px;
+    }
+    li:nth-child(odd) {
+        background-color: darken($nav, 5);
+    }
+    li:hover a {
+        text-indent: 5px;
+    }
+    a {
+        display: inline-block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        transition: all 250ms;
+    }
+}
+
+
+
+
+
+header {
+    padding: 10px;
+    background-color: $black;
+    display: flex;
+    justify-content: flex-end;
+}
