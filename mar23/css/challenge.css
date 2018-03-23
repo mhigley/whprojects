@@ -1,0 +1,35 @@
+nav {
+  background-color: salmon;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 5px;
+}
+
+span.mega {
+  font-size: 200%;
+  color: pink;
+}
+
+nav.vertical {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+}
+
+nav.vertical ul {
+  flex-direction: column;
+}
+
+main.vertical {
+  margin-left: 28%;
+}
+/*# sourceMappingURL=challenge.css.map */
