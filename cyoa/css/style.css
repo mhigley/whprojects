@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html, body {
+  margin: 0;
+}
+
+nav {
+  background-color: #eaeaea;
+  padding: 8px;
+}
+/*# sourceMappingURL=style.css.map */
