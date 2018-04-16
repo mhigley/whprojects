@@ -1,0 +1,75 @@
+@import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
+h1 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-right: auto;
+}
+
+nav {
+  background-color: #475f6b;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav #cart {
+  font-size: 115%;
+  color: white;
+  position: relative;
+  margin-right: 20px;
+}
+
+nav #cart span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #df3020;
+  transform: translate3d(50%, -50%, 0);
+  border-radius: 100px;
+  padding: 4px 5px 2px;
+  font-size: 65%;
+}
+
+nav button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  color: white;
+  height: 45px;
+  cursor: pointer;
+}
+
+h3, p {
+  margin: 0 10px 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 10px;
+}
+
+li.selected {
+  background-color: #d9eaf2;
+}
+
+li img {
+  background-color: white;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */

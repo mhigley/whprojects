@@ -1,0 +1,75 @@
+@import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
+
+h1 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-right: auto;
+}
+
+nav {
+    background-color: hsl(200, 20%, 35%);
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    #cart {
+        font-size: 115%;
+        color: white;
+        position: relative;
+        margin-right: 20px;
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: hsl(5, 75%, 50%);
+            transform: translate3d(50%, -50%, 0);
+            border-radius: 100px;
+            padding: 4px 5px 2px;
+            font-size: 65%;
+        }
+    }
+    button {
+        background-color: hsla(0, 0%, 100%, .2);
+        border: 1px solid white;
+        color: white;
+        height: 45px;
+        cursor: pointer;
+    }
+}
+
+h3, p {
+    margin: 0 10px 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+li {
+    // flex: none 1 0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    &.selected {
+        background-color: hsl(200, 50%, 90%);
+    }
+    input[type="checkbox"]{
+        // position: relative;
+        // z-index: -9999;
+    }
+    img {
+        background-color: white;
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+}
