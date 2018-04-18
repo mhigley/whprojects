@@ -1,3 +1,5 @@
+
+/*
 var start = document.querySelector('button[class="start"]');
 start.addEventListener('click', startGame);
 
@@ -86,3 +88,20 @@ function printBoard(obj){
         }
     });
 }
+
+*/
+
+class Dino {
+    constructor (name, sex, vores) {
+        this.name = name;
+        this.sex = sex;
+        this.vores = vores;
+    }
+    sound() {
+        console.log('roar!');
+    }
+}
+
+var rexy = new Dino('trex', 'male', 'carnivore');
+console.log(rexy);
+
