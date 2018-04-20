@@ -91,6 +91,19 @@ function printBoard(obj){
 
 */
 
+var req = new XMLHttpRequest();
+console.log(req);
+req.open('GET', 'http://localhost:3001');
+console.log(req);
+req.onload = function(){
+    if(req.readyState == 4){
+        console.log(req);
+    }
+}
+req.send(null);
+
+var dinos = [],
+    names = ['Allosaurus', 'Ankylosaurus', 'Baryonyx', 'Brachiosaurus', 'Carnotaurus', 'Gigantosaurus', 'Megalosaurus', 'Spinosaurus', 'Stegosaurus', 'Triceratops', 'Tyrannosaurus'];
 class Dino {
     constructor (name, sex, vores) {
         this.name = name;
@@ -102,6 +115,4 @@ class Dino {
     }
 }
 
-var rexy = new Dino('trex', 'male', 'carnivore');
-console.log(rexy);
 
