@@ -91,6 +91,8 @@ function printBoard(obj){
 
 */
 
+
+/*
 var req = new XMLHttpRequest();
 console.log(req);
 req.open('GET', 'http://localhost:3001');
@@ -114,5 +116,41 @@ class Dino {
         console.log('roar!');
     }
 }
+*/
+var players = [];
 
+var playerStart = document.querySelector('nav input[type="submit"]');
+playerStart.addEventListener('click', setPlayer);
 
+function setPlayer(){
+    var playerName = document.querySelector('nav input[type="text"]').value;
+    if(!!localStorage.getItem('players')){
+        var playerObj = JSON.parse(localStorage.getItem('players'))
+        // for(var i = 0; i < localStorage.getItem('players').length; i++){
+            
+        // }
+    }
+    players.push(playerName);
+    localStorage.setItem('players', players);
+    
+}
+
+var avatarForm = `
+    <form id="avatar">
+        <label><input type="radio" name="avatar" checked><span>Player One</span></label>
+        <label><input type="radio" name="avatar"><span>Player Two</span></label>
+        <input type="submit" value="Choose">
+    </form>
+`;
+
+var Avatar = function(name){
+    this.name = name;
+}
+
+function displayAvatars(){
+    if(!!localStorage.getItem('players')){
+        
+
+    }
+}
+displayAvatars();

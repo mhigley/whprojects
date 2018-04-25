@@ -5,3 +5,12 @@ nav {
     background-color: #eaeaea;
     padding: 8px;
 }
+
+#avatar {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cfcfcf;
+    padding: 10px;
+    border-radius: 5px;
+}

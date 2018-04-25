@@ -9,12 +9,20 @@
 </head>
 <body>
     <nav>
-        <button type="button" class="start">start</button>
+        <input type="text" placeholder="Pick your name">
+        <input type="submit" value="start">
+        <!-- <button type="button" class="start">start</button> -->
     </nav>
     <main>
         <div id="story"></div>
         <div id="options"></div>
     </main>
+
+    <form id="avatar">
+        <label><input type="radio" name="avatar" checked><span>Player One</span></label>
+        <label><input type="radio" name="avatar"><span>Player Two</span></label>
+        <input type="submit" value="Choose">
+    </form>
 
     <!-- <script src="storyline.js"></script> -->
     <script src="js/script.js"></script>
