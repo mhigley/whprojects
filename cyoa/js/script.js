@@ -123,16 +123,30 @@ var playerStart = document.querySelector('nav input[type="submit"]');
 playerStart.addEventListener('click', setPlayer);
 
 function setPlayer(){
-    var playerName = document.querySelector('nav input[type="text"]').value;
-    if(!!localStorage.getItem('players')){
-        var playerObj = JSON.parse(localStorage.getItem('players'))
-        // for(var i = 0; i < localStorage.getItem('players').length; i++){
-            
-        // }
-    }
-    players.push(playerName);
+    var playerName = document.querySelector('nav input[type="text"]').value.trim();
+    // players.push(playerName);
     localStorage.setItem('players', players);
     
+    if(!!localStorage.getItem('players')){
+        var playersArr = localStorage.getItem('players').split(',');
+        playersArr.forEach(function(x){
+            console.log(x);
+            (x == playerName) ? console.log('pick again') : players.push(playerName);
+        });
+        console.log(localStorage.getItem('players'));
+    }else{
+        players.push(playerName);
+    }
+    /*
+    if(!!localStorage.getItem('players')){
+        players = localStorage.getItem('players').split(',');
+        players.map(function(x, y){
+            console.log(x);
+        });
+    }else{
+        localStorage.setItem('players', playerName);
+    }
+    */
 }
 
 var avatarForm = `
