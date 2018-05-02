@@ -9,6 +9,12 @@ html, body {
 html {
     background-image: linear-gradient(to top, hsla(0, 0%, 90%, 1) 25%, hsla(0, 0%, 98%, 0));
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 body {
     margin: 0;
     padding: 2vw 10vw;
@@ -69,4 +75,21 @@ button {
     border-color: inherit; 
     border-radius: 5px;
     cursor: pointer;
+}
+#projects {
+    background-color: hsla(0, 0%, 0%, .5);
+    border-radius: 20px;
+}
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        width: 33%;
+        text-align: center;
+        color: white;
+        img {
+            width: 100%;
+        }
+
+    }
 }
