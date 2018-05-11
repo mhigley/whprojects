@@ -1,0 +1,3 @@
+<h1 [ngClass]="{'make-red': value < 10}">The value of value is {{ value }}</h1>
+<p *ngIf="value < 10">Danger... don't do that!</p>
+<p *ngFor="let color of colors" [ngStyle]="{'background-color':color}">{{ color }}</p>
