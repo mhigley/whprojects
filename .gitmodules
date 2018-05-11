@@ -1,0 +1,6 @@
+[submodule "whprojects"]
+	path = whprojects
+	url = https://github.com/mhigley/whprojects.git
+[submodule "git-submodule-repo"]
+	path = git-submodule-repo
+	url = ./git-submodule-repo
