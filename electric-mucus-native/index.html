@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link data-require="semantic-ui@2.1.8" data-semver="2.1.8" rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.1.8/semantic.min.css" />
+	<script data-require="semantic-ui@2.1.8" data-semver="2.1.8" src="https://cdn.jsdelivr.net/semantic-ui/2.1.8/semantic.min.js"></script>
+</head>
+
+<body class="ui container">
+	<div class="ui padded two column grid">
+		<div class="row">
+			<h1>Native JS</h1>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<h3 class="ui header">Type in the colour of the Planet Express ship:
+					<div class="sub header">Requirements (<a target="_blank" href="https://youtu.be/kkv4UsinVGk">and the answer</a>)</div>
+				</h3>
+
+				<ul class="ui list">
+					<li>Change the button's background color to a valid hexadecimal colour code or name as entered by the user; i.e. if they type &quot;orange&quot;, let them see orange</li>
+					<li>The UI should respond as the user types</li>
+					<li>The button should be enabled (clickable) only when the correct answer is typed</li>
+					<li>Since the correct answer isn't a real colour name, please substitute a colour in that special case for the button</li>
+					<li>Clicking the button should disable the button <i>and</i> input and alert the user that the exercise is over</li>
+				</ul>
+
+				<div class="ui large action input">
+					<input id="input-id" type="text" value="" />
+					<button id="button-id" class="ui large button">OK</button>
+				</div>
+			</div>
+			<div class="center aligned middle aligned column">
+				<img class="ui fluid image" src="futurama-planet-express.jpg">
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
