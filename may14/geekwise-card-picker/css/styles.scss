@@ -1,0 +1,76 @@
+code {
+	background-color: #ebebeb;
+	font-family: "SFMono-Regular", Consolas, Courier, monospace;
+	padding: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.card-environment {
+	float: left;
+	width: 60%;
+}
+
+.instruction {
+	float: left;
+	width: 40%;
+	padding-right: 2em;
+}
+
+.main {
+	margin-bottom: 3em;
+	margin-top: 3em;
+}
+
+.clear {
+	clear: left;
+}
+
+#users-cards .ui.segment {
+    position: relative;
+	background: hsl(0, 0%, 100%);
+    box-shadow: 0 1px 2px 0 hsla(210, 5.6%, 14.1%, 0.2);
+    margin: 1rem 0;
+        margin-right: 1rem;
+    padding: 0em;
+    border-radius: .28571429rem;
+    border: 1px solid hsla(210, 5.6%, 14.1%, 0.2);
+        border-top-color: hsla(210, 5.6%, 14.1%, 0.2);
+        border-top-style: solid;
+        border-top-width: 1px;
+}
+
+#users-cards .ui.button {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: hsl(210, 3.3%, 88.2%);
+        background-color: hsl(210, 3.3%, 88.2%);
+        background-image: none;
+    color: hsla(0, 0%, 0%, 0.6);
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    margin: 0;
+	padding: .78571429em 1.5em;
+	border: 1em solid white;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 1px transparent inset,0 0 0 0 hsla(210, 5.6%, 14.1%, 0.2) inset;
+    * {
+        pointer-events: none;
+    }
+}
+
+.life-bar {
+    width: 5px;
+    height: 52px;
+    background-color: hsl(104, 50%, 50%);
+}

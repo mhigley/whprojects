@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link data-require="semantic-ui@2.1.8" data-semver="2.1.8" rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.1.8/semantic.min.css" />
+	<script data-require="semantic-ui@2.1.8" data-semver="2.1.8" src="https://cdn.jsdelivr.net/semantic-ui/2.1.8/semantic.min.js"></script>
+	<link rel="stylesheet" href="/geekwise-card-picker/css/styles.css">
+
+	<base href="/">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="ui container main">
+		<div class="instruction">
+			<h1>Card Pick-a-matic</h1>
+			<p>You just pick cards and put them back.  So fun it doesn't need to be a game.  Tell your friends.</p>
+	
+			<h3>Step 1</h3>
+			<p>
+				The &quot;Pick a card!&quot; button should actually do a thing or two.  Have it <b>draw a card from a deck</b>!  To do this,
+				you will need to instantiate a <code>Deck</code> from the <code>Deck</code> class.  Don't do this on every click.  Although you
+				might draw cards from multiple decks or combine multiple decks into one, it's probably best to just use one.
+			</p>
+			<p>
+				The card drawn should <b>show somewhere</b>.
+			</p>
+	
+			<h3>Step 2</h3>
+			<p>
+				Don't just draw and toss.  That's reckless and bad for the environment.  Let's <b>make a user's hand</b> (<code>ICard[]</code>).  Store the cards
+				we draw from the deck and show them using fancy Angular stuff.  Now's the time to shine.
+			</p>
+			<p>
+				Use the <code>&lt;div&gt;</code> with class <code>card-in-hand</code>.  Be one with your Angular structural directives.
+			</p>
+	
+			<h3>Step 3</h3>
+			<p>
+				Each card should have a button that, when clicked, <b>sends the card back</b> into the deck from whence it came.
+			</p>
+	
+			<h3>Step 4</h3>
+			<p>
+				Your <code>Deck</code> instance <b>should have a life bar</b> so you don't accidentally kill it.  As you remove cards from the deck, present a
+				rectangle (bar) that shrinks and changes color to something dangerousy.  Make it look healthy again if cards are returned to the deck.
+			</p>
+	
+			<h3>Step 5</h3>
+			<p>
+				Finished early?  <b>Polish</b>.
+			</p>
+			<p>
+				Disable the &quot;Pick a card!&quot; button when there's no more cards to draw. <b>Style your cards</b> and maybe the space they
+				chill.  Make them look good.  Add to your GitHub for more job-cred.
+			</p>
+		</div>
+	
+		<div class="card-environment">
+			<div class="ui segment">
+				<div class="ui grid">
+					<div class="row">
+						<div class="seven wide middle aligned column">
+							<button id="pick-card" class="ui big fluid button">
+								Pick a card!
+							</button>
+						</div>
+						<div class="one wide bottom aligned column">
+							<div class="life-bar"></div>
+						</div>
+						<div class="seven wide middle aligned column">
+								You last drew: <span id="last-drew">n/a</span>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<ul id="users-cards"></ul>
+			<!-- <li class="ui left floated compact center aligned segment card-in-hand">
+				<button class="ui large button">
+					<h2>card.rank of card.suit</h2>
+					<span class="return">
+						RETURN
+						<i class="reply icon"></i>
+					</span>
+				</button>
+			</li> -->
+		</div>
+	
+		<div class="clear"></div>
+	</div>
+	<script src="/geekwise-card-picker/js/script.js"></script>
+</body>
+</html>
